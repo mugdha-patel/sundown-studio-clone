@@ -1,0 +1,31 @@
+#hero-shape{
+    padding:120px;
+
+}
+
+#hero-shape .hero1{
+    height: 30vh;
+    width: 30vh;
+    background-color: orangered;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+#hero-shape .hero2{
+    height: 30vh;
+    width: 30vh;
+    background-color: orangered;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    animation: anime 3s liner 1s infinite alternate fill-mode;
+}
+
+@keyframes anime {
+    from{
+        transform: translate(-10%, -10%);
+    }
+    to{
+        transform: translate(10%,10%);
+    }
+}
