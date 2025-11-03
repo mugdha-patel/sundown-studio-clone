@@ -202,7 +202,7 @@ nav {
     overflow-x: auto;
 }
 
-.moving-text::-webkit-scrollbar{
+.moving-text::-webkit-scrollbar {
     display: none;
 }
 
@@ -234,10 +234,11 @@ nav {
 }
 
 @keyframes move {
-    from{
+    from {
         transform: translateX(0);
     }
-    to{
+
+    to {
         transform: translateX(-100%);
     }
 }
@@ -250,54 +251,54 @@ nav {
     background-color: #EFEAE3;
 }
 
-.page2-bottom{
+.page2-bottom {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding: 80px;
-    
+
 }
 
-.bottom-head{
+.bottom-head {
     width: 70%;
     position: relative;
     z-index: 9;
 }
 
-.bottom-head h4{
+.bottom-head h4 {
     font-size: 52px;
     width: 80%;
 }
 
-.bottom-part2{
+.bottom-part2 {
     width: 30%;
     margin-top: 120px;
 }
 
-.bottom-part2 img{
+.bottom-part2 img {
     width: 350px;
     height: 250px;
     border-radius: 15px;
     margin-bottom: 30px;
 }
 
-.bottom-part2 p{
-     font-weight: 200;
+.bottom-part2 p {
+    font-weight: 200;
     font-size: 12px;
     width: 255px;
 }
 
-#page2 #page2-bg-svg{
-     height: 40vw;
-    width: 40vw;
+#page2 #page2-bg-svg {
+    height: 35vw;
+    width: 35vw;
     position: absolute;
     border-radius: 50%;
     background: linear-gradient(to top right, #ff2d03, #ff5c0b);
-    top: 46%;
-    left: 15%;
-    filter: blur(30px);
+    top: 42%;
+    left: 22%;
+    filter: blur(20px);
     animation-name: gooey;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -307,12 +308,20 @@ nav {
 
 @keyframes gooey {
     from {
-        filter: blur(30px);
+        filter: blur(20px);
         transform: translate(5%, -5%) skew(0);
     }
 
     to {
-        filter: blur(50px);
-        transform: translate(-5%, 5%) skew(-2deg);
+        filter: blur(30px);
+        transform: translate(-5%, 5%) skew(-1deg);
     }
+}
+
+#page3 {
+    position: relative;
+    padding-top: 8vw;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EFEAE3;
 }
