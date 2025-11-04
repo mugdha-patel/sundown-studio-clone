@@ -459,6 +459,7 @@ nav {
     min-height: 100vh;
     background-color: #EFEAE3;
     padding: 30px;
+    padding-bottom: 90px;
 }
 
 #page4 .proj-section {
@@ -468,6 +469,27 @@ nav {
     background-color: #000;
     border-radius: 30px;
     gap: 20px;
+}
+
+#page4 .page4-head {
+    display: flex;
+    align-items: center;
+    padding: 120px 30px;
+    padding-bottom: 30px;
+    gap: 5px;
+}
+
+.page4-head h3 {
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.svg-ico {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #FE330A;
 }
 
 .proj-section .section-text {
@@ -514,6 +536,27 @@ nav {
     border-radius: 30px;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 60px 0;
+}
+
+.swiper-slide {
+    width: 20%;
+    border-left: 1px solid #aeadad;
+    padding: 0 2vw;
+}
+
+.swiper img{
+    margin-bottom: 10px;
+}
+
+.swiper p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
 
 #page5 {
     width: 100%;
@@ -546,8 +589,8 @@ nav {
     animation-name: bg-shape1;
 }
 
-#footer .bg-shape2{
-        position: absolute;
+#footer .bg-shape2 {
+    position: absolute;
     background-color: #fe330a;
     filter: blur(50px);
     right: -27%;
@@ -555,11 +598,11 @@ nav {
     width: 70%;
     height: 90%;
     animation-duration: 4s;
-    animation-timing-function: 
-linear;
+    animation-timing-function:
+        linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-       animation-name: bg-shape2;
+    animation-name: bg-shape2;
 }
 
 @keyframes bg-shape1 {
@@ -571,9 +614,10 @@ linear;
         transform: rotate(-20deg);
     }
 }
+
 @keyframes bg-shape2 {
     from {
-            transform: rotate(30deg);
+        transform: rotate(30deg);
     }
 
     to {
@@ -615,7 +659,7 @@ linear;
     font-weight: 300;
 }
 
-.top-right input::placeholder{
+.top-right input::placeholder {
     color: #fff;
     font-size: 18px;
 }
