@@ -120,7 +120,7 @@ nav {
 .banner-video video {
     width: 100%;
     border-radius: 30px;
-    margin-top: 120px;
+    margin-top: 60px;
     position: relative;
 }
 
@@ -192,9 +192,11 @@ nav {
 }
 
 #page2 {
-    min-height: 100vh;
+    position: relative;
+    padding-top: 8vw;
     width: 100%;
-    padding: 30px 0;
+    min-height: 120vh;
+    background-color: #EFEAE3;
 }
 
 .moving-text {
@@ -243,13 +245,7 @@ nav {
     }
 }
 
-#page2 {
-    position: relative;
-    padding-top: 8vw;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #EFEAE3;
-}
+
 
 .page2-bottom {
     height: 100%;
@@ -278,8 +274,8 @@ nav {
 }
 
 .bottom-part2 img {
-    width: 350px;
-    height: 250px;
+    width: 250px;
+    height: 150px;
     border-radius: 15px;
     margin-bottom: 30px;
 }
@@ -296,7 +292,7 @@ nav {
     position: absolute;
     border-radius: 50%;
     background: linear-gradient(to top right, #ff2d03, #ff5c0b);
-    top: 42%;
+    top: 55%;
     left: 22%;
     filter: blur(20px);
     animation-name: gooey;
@@ -319,9 +315,89 @@ nav {
 }
 
 #page3 {
-    position: relative;
-    padding-top: 8vw;
+    /* padding-top: 8vw; */
     width: 100%;
     min-height: 100vh;
     background-color: #EFEAE3;
+}
+
+#page3 .page3-head {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px;
+    gap: 5px;
+}
+
+.page3-head h3 {
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.svg-ico {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #FE330A;
+}
+
+.elem {
+    height: 96px;
+    width: 100%;
+    border-bottom: 1px solid rgb(207, 201, 201);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.elem h3 {
+    z-index: 10;
+    font-weight: bolder;
+    font-size: 45px;
+    position: relative;
+}
+
+.brand-name h6 {
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+    text-align: right;
+}
+
+.brand-name p {
+    font-weight: 300;
+    color: rgb(208, 198, 198);
+    position: relative;
+    z-index: 10;
+}
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #FF9831;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s;
+}
+
+.elem:hover .overlay {
+    top: 0;
+}
+
+.fixed-image{
+    height: 450px;
+    width: 350px;
+    border-radius: 30px;
+    position: fixed;
+    z-index: 99;
+    top: 20%;
+    left: 50%;
+    display: none;
+    background-size: cover;
+    background-position: center;
 }
